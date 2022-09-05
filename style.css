@@ -41,14 +41,45 @@ ul {
   list-style: none;
 }
 
-section {
-  padding-block: 6.25rem;
-}
-
 .wrapper {
   width: 23.4375rem;
   margin-inline: auto;
   padding-inline: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  padding-block: 6.25rem;
+}
+
+section header h4 {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 150%;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+}
+section header h2 {
+  font-size: 1.875rem;
+  line-height: 2.43rem;
+  color: var(--headline);
+}
+section header h1 {
+  font-size: 2.125rem;
+  color: var(--headline);
+  line-height: 130%;
+}
+section .content p {
+  color: var(--paragraph);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
 }
 /** *************** NAVIGATION *************************************/
 nav {
@@ -59,8 +90,7 @@ nav {
 
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100vw;
 
   z-index: 100;
 }
@@ -73,7 +103,6 @@ nav .wrapper {
 
 nav.scroll {
   background: var(--primary-color);
-  width: 100vw;
 }
 nav.scroll .logo svg:nth-child(1) path {
   fill: white;
@@ -117,16 +146,12 @@ body.menu-expanded .menu {
   background: var(--primary-color);
 
   width: 100vw;
-  height: 150vw;
+  height: 100%;
 
   padding-top: var(--nav-height);
 
   transition: transform 400ms;
   transform: translateY(0%);
-}
-
-body.menu-expanded nav {
-  position: relative;
 }
 
 .menu ul:nth-child(1) {
@@ -208,9 +233,6 @@ body.menu-expanded button path {
 
 #home h1 {
   margin-bottom: 1.5625rem;
-  font-size: 2.125rem;
-  color: var(--headline);
-  line-height: 130%;
 }
 
 #home p {
@@ -278,23 +300,10 @@ body.menu-expanded button path {
 }
 /* *************** SERVICES *************************************/
 #services header h4 {
-  color: var(--primary-color);
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 150%;
-
-  text-transform: uppercase;
-
-  letter-spacing: 0.08em;
-
   margin-bottom: 1rem;
 }
 
 #services header h2 {
-  font-size: 1.875rem;
-  line-height: 2.43rem;
-  color: var(--headline);
-
   margin-bottom: 3.75rem;
 }
 #services .cards {
@@ -314,4 +323,21 @@ body.menu-expanded button path {
 
 #services .card h3 {
   margin-block: 1rem;
+}
+/* *************** About *************************************/
+#about {
+  text-align: left;
+  background-color: var(--brand-beige);
+}
+
+#about header h4 {
+  margin-bottom: 1rem;
+}
+
+#about header h2 {
+  margin-bottom: 1.5rem;
+}
+
+#about img {
+  margin-block: 3.75rem 6.25rem;
 }
