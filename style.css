@@ -5,12 +5,13 @@
   box-sizing: border-box;
 }
 :root {
-  --primary-color: hsl(170, 100%, 26%);
+  --hue: 130;
+  --primary-color: hsl(var(--hue), 100%, 26%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
   --brand-beige: hsl(39, 100%, 97%);
-  --brand-light: hsla(148, 23%, 89%);
-  --brand-green-hover: hsl(170, 100%, 14%);
+  --brand-light: hsl(calc(var(--hue) - 22), 23%, 89%);
+  --brand-green-hover: hsl(var(--hue), 100%, 14%);
 
   --bg-light: hsla(180, 14%, 97%);
 
@@ -117,6 +118,31 @@ section .content p {
   justify-content: center;
   gap: 2rem;
 }
+
+/** *************** CUSTOM PAGE *************************************/
+
+#services .card path {
+  stroke: var(--primary-color);
+}
+
+#navigate .logo path[fill*='#00856F'],
+#backToTopButton circle {
+  fill: var(--primary-color);
+}
+
+button.open-menu path[stroke*='#00856F'],
+#contact li path {
+  stroke: var(--primary-color);
+}
+
+body.menu-expanded #navigate .logo path,
+#navigate.scroll .logo path {
+  fill: white;
+}
+
+#navigate.scroll button.open-menu path[stroke*='#00856F'] {
+  stroke: white;
+}
 /** *************** NAVIGATION *************************************/
 nav {
   display: flex;
@@ -139,12 +165,6 @@ nav .wrapper {
 
 nav.scroll {
   background: var(--primary-color);
-}
-nav.scroll .logo svg:nth-child(1) path {
-  fill: white;
-}
-nav.scroll button path {
-  stroke: white;
 }
 
 nav button {
@@ -201,9 +221,17 @@ body.menu-expanded .menu {
   font-size: 1.5rem;
   line-height: 1.9rem;
 }
+
 .menu ul li a {
   color: white;
   text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+.menu ul li a:hover {
+  background-color: var(--primary-color);
+  color: white;
+  filter: brightness(1.1);
+  border-radius: 2.5rem;
 }
 
 .menu .button {
@@ -222,6 +250,12 @@ body.menu-expanded .menu {
 
   margin-top: 3rem;
   margin-bottom: 5rem;
+}
+
+.menu .button:hover {
+  background-color: var(--primary-color);
+  color: white;
+  filter: brightness(1.1);
 }
 
 body.menu-expanded .logo,
@@ -334,6 +368,9 @@ body.menu-expanded button path {
 #services .card h3 {
   margin-block: 1rem;
 }
+
+/* *************** testimonials *************************************/
+
 /* *************** About *************************************/
 #about {
   text-align: left;
@@ -405,4 +442,25 @@ footer p {
 
 footer .social-links {
   justify-content: flex-start;
+}
+
+/* *************** BACK TO TOP *************************************/
+
+#backToTopButton {
+  position: fixed;
+  bottom: 0.625rem;
+  right: 1.25rem;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(100%);
+  transition: 200ms;
+}
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
 }

@@ -1,4 +1,13 @@
+window.addEventListener('scroll', onScroll)
+onScroll()
+
+// FUNCÇOES SCROLL
 function onScroll() {
+  showNavOnScroll()
+  showBackToTopOnScroll()
+}
+
+function showNavOnScroll() {
   if (scrollY > 0) {
     navigate.classList.add('scroll')
   } else {
@@ -6,6 +15,15 @@ function onScroll() {
   }
 }
 
+function showBackToTopOnScroll() {
+  if (scrollY > 400) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+
+// ABRIR FECHAR MENU
 function openMenu() {
   document.body.classList.add('menu-expanded')
 }
@@ -14,6 +32,9 @@ function closeMenu() {
   document.body.classList.remove('menu-expanded')
 }
 
+
+
+// SCROLL REVEAL
 ScrollReveal({
   origin: 'top',
   distance: '30px',
@@ -29,4 +50,5 @@ ScrollReveal({
 #about,
 #about header,
 #about .content,
-#about img`)
+#about img,
+footer`)
