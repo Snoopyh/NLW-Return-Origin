@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!--SWIPERS-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!--NAVIGATION-->
@@ -71,6 +76,9 @@
             <li><a onclick="closeMenu()" href="#home">Início</a></li>
             <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
             <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+            <li>
+              <a onclick="closeMenu()" href="#testimonials">Depoimentos</a>
+            </li>
           </ul>
 
           <a class="button" onclick="closeMenu()" href="#contact"
@@ -269,6 +277,7 @@
         </div>
       </div>
     </section>
+    <div class="divider-1"></div>
     <!--SERVICES-->
     <section id="services">
       <div class="wrapper">
@@ -414,7 +423,73 @@
         </div>
       </div>
     </section>
-
+    <div class="divider-2"></div>
+    <!--TESTIMONIALS-->
+    <section id="testimonials">
+      <div class="wrapper">
+        <header>
+          <h4>Depoimentos</h4>
+          <h2>Pacientes</h2>
+        </header>
+        <div class="testimonials swiper">
+          <div class="testimonials swiper-wrapper">
+            <div class="testimonials swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Dicta, molestias cum? Dolorum veritatis
+                  inventore architecto tempora laudantium omnis molestias
+                  pariatur commodi reprehenderit minus? Magnam recusandae
+                  corporis labore, cupiditate vel fugit.
+                </p>
+                <cite>
+                  <img
+                    src="https://randomuser.me/api/portraits/women/6.jpg"
+                    alt="foto da Luna Falcão"
+                  />Luna Falcão
+                </cite>
+              </blockquote>
+            </div>
+            <div class="swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Dicta, molestias cum? Dolorum veritatis
+                  inventore architecto tempora laudantium omnis molestias
+                  pariatur commodi reprehenderit minus? Magnam recusandae
+                  corporis labore, cupiditate vel fugit.
+                </p>
+                <cite>
+                  <img
+                    src="https://randomuser.me/api/portraits/men/43.jpg"
+                    alt="foto de Andre Brandão"
+                  />Andreh Brandão
+                </cite>
+              </blockquote>
+            </div>
+            <div class="swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Dicta, molestias cum? Dolorum veritatis
+                  inventore architecto tempora laudantium omnis molestias
+                  pariatur commodi reprehenderit minus? Magnam recusandae
+                  corporis labore, cupiditate vel fugit.
+                </p>
+                <cite>
+                  <img
+                    src="https://randomuser.me/api/portraits/women/60.jpg"
+                    alt="foto da Wanessa Souza"
+                  />Wanessa Souza
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <div class="divider-1"></div>
     <!--ABOUT-->
     <section id="about">
       <div class="wrapper">
@@ -440,6 +515,7 @@
         </div>
       </div>
     </section>
+    <div class="divider-2"></div>
     <section id="contact">
       <div class="wrapper">
         <header>
@@ -529,6 +605,7 @@
         </div>
       </div>
     </section>
+    <div class="divider-1"></div>
     <footer>
       <div class="wrapper">
         <a class="logo" href="#home">
@@ -693,7 +770,8 @@
         />
       </svg>
     </a>
-
+    <!--SWIPPER-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!--SCROLL REVEAL LIB-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>

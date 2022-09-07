@@ -32,7 +32,20 @@ function closeMenu() {
   document.body.classList.remove('menu-expanded')
 }
 
-
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  mousewheel: true,
+  keyboard: true,
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+      setWrapperSize: true
+    }
+  }
+})
 
 // SCROLL REVEAL
 ScrollReveal({
@@ -47,6 +60,7 @@ ScrollReveal({
 #services,
 #services header,
 #services .card,
+#testimonials,
 #about,
 #about header,
 #about .content,
