@@ -20,6 +20,7 @@ Colocar em prática técnicas, conceitos e tecnologias utilizadas no desenvolvim
 - CSS
 - JavaScript
     - 📚 ScrollReveal (animação de elementos durante a rolagem da tela)
+    - 📚 Swiper
 <br /> <br />
 
 ### 📷 Tela inicial:
@@ -27,14 +28,3 @@ Colocar em prática técnicas, conceitos e tecnologias utilizadas no desenvolvim
 
 <br />
 
-### 📂 Como rodar o projeto:
-
-##### Passo 1. Clone este repositório pelo seu terminal:
-```
-$ git clone https://github.com/lucasdam/doctor-care.git
-```
-##### Passo 2. Acesse a pasta do projeto:
-```
-$ cd doctor-care
-```
-##### Passo 3. Abra o projeto no seu editor de código favorito.
