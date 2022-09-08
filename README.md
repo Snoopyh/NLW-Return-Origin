@@ -2,7 +2,7 @@
 <p align="center">Aplicação no formato de landing page, responsiva, desenvolvida durante a NLW Return da @Rocketseat.</p> <br />
 
 ### ☁️ Deploy:
-O <a href="https://lucasdam.github.io/doctor-care">Doctor Care</a> está hospedado no GitHub Pages.
+O <a href="https://snoopyh.github.io/NLW-Return-Origin-Project-Doctor-Care/">Doctor Care</a> está hospedado no GitHub Pages.
 <br /> <br />
 
 ### 💻 Projeto:
