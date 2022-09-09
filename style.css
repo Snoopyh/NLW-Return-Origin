@@ -682,10 +682,12 @@ footer .social-links {
   nav#navigate.scroll .menu ul li a::after {
     background-color: white;
   }
+  nav#navigate .menu ul li a.active::after,
   nav#navigate .menu ul li a:hover::after {
     width: 100%;
     padding-inline: 0.5rem;
   }
+  nav#navigate .menu ul li a.active,
   nav#navigate.scroll .menu ul li a:hover {
     opacity: 1;
   }
@@ -714,6 +716,7 @@ footer .social-links {
     padding: 0.5rem;
     transition: all 700ms;
   }
+
   /* *************** HOME *************************************/
 
   #home .content a.button:hover {
